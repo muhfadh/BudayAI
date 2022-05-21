@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/activity_main"
     tools:context=".MainActivity">
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -18,8 +19,10 @@
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_marginEnd="16dp"
+            app:labelVisibilityMode="selected"
+            android:layout_gravity="bottom"
+            android:layout_height="?attr/actionBarSize"
             app:menu="@menu/bottom_nav"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
@@ -31,11 +34,12 @@
         app:layout_anchor="@id/bottom_bar"/>
 
     <fragment
-        android:id="@+id/nav_fragment_buday"
+        android:id="@+id/nav_host_fragment_activity_main"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/buday_navigation" />
+        app:navGraph="@navigation/buday_navigation"
+        tools:ignore="FragmentTagUsage"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -30,7 +30,7 @@
                     android:text="@string/katalog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/Comfortaa_Regular"
+                    android:fontFamily="@font/comfortaa_regular"
                     android:textColor="@color/black"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -65,16 +65,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/title_populer"
                 android:textSize="13sp"
+                android:fontFamily="@font/roboto_black"
                 android:layout_marginStart="16dp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/Roboto_Black"/>
+                android:textColor="@color/black"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_populer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollbars="horizontal"
                 tools:listitem="@layout/item_objek"/>
         </LinearLayout>
 

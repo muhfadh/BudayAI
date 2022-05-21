@@ -20,7 +20,7 @@ class HomeFragment : Fragment() {
 
         binding.homeToolbar.setOnMenuItemClickListener {
             when(it.itemId){
-                R.id.menu_home -> {
+                R.id.profile_menu -> {
                     startActivity(Intent(activity, MainActivity::class.java))
                     //ini nanti ganti ke halaman profile
                 }
