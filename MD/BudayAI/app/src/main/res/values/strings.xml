@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BudayAI</string>
+    <string name="home">Home</string>
+    <string name="location">Location</string>
+    <string name="title_objek_populer">OBJEK BUDAYA POPULER</string>
+    <string name="nama_suku">Nama Suku</string>
+    <string name="jenis_ornamen">Jenis Ornamen</string>
+</resources>
