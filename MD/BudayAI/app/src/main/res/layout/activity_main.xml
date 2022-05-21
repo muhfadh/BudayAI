@@ -30,4 +30,12 @@
         android:src="@drawable/ic_baseline_photo_camera_24"
         app:layout_anchor="@id/bottom_bar"/>
 
+    <fragment
+        android:id="@+id/nav_fragment_buday"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/buday_navigation" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
