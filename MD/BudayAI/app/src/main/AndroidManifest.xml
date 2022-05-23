@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BudayAI">
         <activity
+            android:name=".listKatalog.ListKatalogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".detailKatalog.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

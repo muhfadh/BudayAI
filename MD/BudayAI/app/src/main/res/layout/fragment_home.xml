@@ -30,7 +30,7 @@
                     android:text="@string/katalog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/comfortaa_regular"
+                    android:fontFamily="@font/poppins_regular"
                     android:textColor="@color/black"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -48,10 +48,10 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/layout_populer"
+        android:id="@+id/layout_swipe"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
-        android:layout_height="310dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="24dp">
 
@@ -65,15 +65,18 @@
                 android:layout_height="wrap_content"
                 android:text="@string/title_populer"
                 android:textSize="13sp"
-                android:fontFamily="@font/roboto_black"
+                android:fontFamily="@font/poppins_bold"
                 android:layout_marginStart="16dp"
                 android:textColor="@color/black"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_populer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="290dp"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
                 tools:listitem="@layout/item_objek"/>
+
         </LinearLayout>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

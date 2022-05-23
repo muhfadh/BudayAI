@@ -10,4 +10,11 @@
         android:name="com.dicoding.budayai.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/menu_location"
+        android:name="com.dicoding.budayai.location.LocationFragment"
+        tools:layout="@layout/fragment_location"
+        android:label="LocationFragment" />
+
 </navigation>

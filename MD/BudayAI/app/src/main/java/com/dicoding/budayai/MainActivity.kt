@@ -18,12 +18,11 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-//        binding.bottomNavView.background = null
-//        binding.bottomNavView.menu.getItem(1).isEnabled = false
+        binding.bottomNavView.background = null
 
-        val navView: BottomNavigationView = binding.bottomNavView
+        val navView = findViewById<BottomNavigationView>(R.id.bottom_navView)
 
-        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        val navController = findNavController(R.id.fragment_view)
         navView.setupWithNavController(navController)
     }
 }
