@@ -17,4 +17,12 @@
     <string name="title_tab_sejarah">Sejarah</string>
     <string name="title_tab_gallery">Gallery</string>
     <string name="sample_text_detail">Burung Enggang digunakan sebagai simbol kebesaran dan kemuliaan suku tersebut, melambangkan perdamaian dan persatuan, sayapnya yang tebal melambangkan pemimpin yang selalu melindungi rakyatnya. Sedangkan ekor panjangnya dianggap sebagai tanda kemakmuran rakyat suku Dayak. Suku Dayak Kalimantan dalam kehidupannya sangat erat dengan fauna gagah satu ini, cerita dan mitos.</string>
+    <string name="map_style">MAP STYLE</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type">MAP TYPE</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_style_night">Night</string>
+    <string name="map_style_normal">Normal</string>
+    <string name="sample_number">2</string>
+    <string name="budaya_bercerita">Budaya Bercerita</string>
 </resources>

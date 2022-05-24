@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.LocationFragment">
+    tools:context=".location.LocationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <fragment
+        android:id="@+id/maps_location"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:ignore="FragmentTagUsage"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/option_style_map"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_gravity="end"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_map_style_option"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
