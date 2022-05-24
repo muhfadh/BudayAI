@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BudayAI</string>
+    <string name="home">Home</string>
+    <string name="location">Location</string>
+    <string name="title_objek_populer">OBJEK BUDAYA POPULER</string>
+    <string name="nama_suku">Nama Suku</string>
+    <string name="jenis_ornamen">Jenis Ornamen</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="katalog">Katalog</string>
+    <string name="title_populer">OBJEK BUDAYA POPULER</string>
+    <string name="profile">Profile</string>
+    <string name="title_nama_suku">Nama Suku</string>
+    <string name="deskripsi_singkat">Deskripsi Singkat</string>
+</resources>
