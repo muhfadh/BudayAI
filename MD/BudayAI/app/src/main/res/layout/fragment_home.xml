@@ -7,41 +7,42 @@
     tools:context=".home.HomeFragment">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:contentScrim="@color/white"
             android:background="@color/white"
-            app:title="@string/app_name"
+            app:contentScrim="@color/white"
             app:expandedTitleTextColor="#00000000"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:title="@string/app_name">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="32dp"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:id="@+id/tv_app_bar"
-                    android:text="@string/katalog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/katalog"
                     android:textColor="@color/black"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:textSize="36sp"/>
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/home_toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="20dp"
                 app:layout_collapseMode="pin" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -63,19 +64,29 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_populer"
-                android:textSize="13sp"
-                android:fontFamily="@font/poppins_bold"
-                android:layout_marginStart="16dp"
+                android:text="@string/title_budaya"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:layout_marginStart="20dp"
                 android:textColor="@color/black"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_populer"
                 android:layout_width="match_parent"
-                android:layout_height="290dp"
+                android:layout_height="280dp"
                 android:orientation="horizontal"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/item_objek"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_artikel_budaya"
+                android:textSize="15sp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 

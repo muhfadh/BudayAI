@@ -11,12 +11,16 @@
         <entry key="..\:/Bangkit2022/BudayAI/app/src/main/res/menu/bottom_nav.xml" value="0.20416666666666666" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/font/font.xml" value="0.1923899102180419" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_detail.xml" value="0.14641885766092474" />
-        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_list_katalog.xml" value="0.25" />
-        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_detail_ornamen.xml" value="0.22" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_list_katalog.xml" value="0.2" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_blank.xml" value="0.1455122393472348" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_deskripsi.xml" value="0.25" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_gallery.xml" value="0.14641885766092474" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_location.xml" value="0.22" />
-        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/item_objek.xml" value="0.33" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_sejarah.xml" value="0.22" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/item_objek.xml" value="0.5" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/item_suku.xml" value="0.33" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/menu/bottom_nav.xml" value="0.1675929884566054" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/menu/profile_menu.xml" value="0.1675929884566054" />

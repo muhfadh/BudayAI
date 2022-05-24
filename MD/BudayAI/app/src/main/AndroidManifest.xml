@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BudayAI">
         <activity
+            android:name=".detail.DetailOrnamenActivity"
+            android:exported="false" />
+        <activity
             android:name=".listKatalog.ListKatalogActivity"
             android:exported="false" />
         <activity
