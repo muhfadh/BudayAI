@@ -1,0 +1,673 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+  
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.navbar {
+    min-height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 4rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 60px;
+}
+
+header img{
+    height: 10%;
+    margin-top: 4px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #AA695F;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+nav a:hover {
+    color: #2c2c2c;
+    /* border-radius: 50px; */
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    background-color: #AA695F;
+    border-radius: 20px;
+}
+
+#home {
+    padding: 1.7rem 4rem;
+    background: radial-gradient(73.23% 175.27% at -0.9% -101.79%, #FFFFFF 0%, #FBFBFB 100%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#home .home-content {
+    margin: auto 0;
+}
+
+#home .home-content h2 {
+    color: #AA695F;
+    font-size: 4.7rem;
+    margin: 0;
+}
+
+#home .home-content p {
+    margin: 0;
+    color: #3C3C3C;
+    font-size: 1.8rem;
+    width: 350px;
+    line-height: 2.5rem;
+}
+
+#home .home-content p span {
+    color: #AA695F;
+}
+
+#home img {
+    height: 25rem;
+}
+
+#summary {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+#summary h2 {
+    color: #AA695F;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#summary hr {
+    width: 23.4rem;
+    border: 1px solid #AA695F;
+    border-radius: 22px;
+    margin: 0 auto;
+}
+
+#summary p {
+    padding: 2rem 4rem;
+    color: #3C3C3C;
+    font-size: 1.4rem;
+}
+
+#summary p span {
+    color: #AA695F;
+    font-weight: bold;
+}
+
+#summary img {
+    width: 100%;
+}
+
+.wave img {
+    margin: -1.5rem auto;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+#features-app {
+    padding: 2rem 4rem;
+    background: radial-gradient(73.23% 175.27% at -0.9% -101.79%, #FFFFFF 0%, #FBFBFB 100%);
+    text-align: center;
+}
+
+#features-app h2 {
+    color: #AA695F;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#features-app hr {
+    width: 16.5rem;
+    border: 1px solid #AA695F;
+    border-radius: 22px;
+    margin: 0 auto;
+}
+
+#features-app > p {
+    padding: 2rem 4rem;
+    color: #3C3C3C;
+    font-size: 1.4rem;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+}
+
+.features .card {
+    margin: 20px 50px;
+    width: 300px;
+}
+
+.features .card h3 {
+    color: #AA695F;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.features .card p {
+    padding: 1rem 0;
+    color: #3C3C3C;
+    font-size: 1.2rem;
+}
+
+#about-us {
+    padding: 2rem 4rem;
+    background-color: #809A6F;
+    text-align: center;
+    color: #ffffff;
+}
+
+#about-us h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#about-us hr {
+    width: 17.7rem;
+    border: 1px solid #ffffff;
+    border-radius: 22px;
+    margin: 0 auto;
+}
+
+#about-us > p {
+    margin: 2rem 4rem 0;
+    font-size: 1.2rem;
+}
+
+.team {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team .card {
+    margin: 2rem;
+    padding: 20px;
+    background: #FFFFFF;
+    width: 300px;
+    height: 350px;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0px 7px 10px rgba(black, 0.5);
+}
+
+
+.team .card:hover {
+    box-shadow: 4px 4px 4px rgba(60, 60, 93, 0.33);
+}
+
+.collect {
+    width: 20px;
+    height: 40px;
+}
+
+#about-us .card h3 {
+    color: #AA695F;
+}
+
+#about-us .card p {
+    padding: 0.6rem 0 1.4rem;
+    font-size: 0.8rem;
+    color: #3C3C3C;
+}
+
+#about-us .card button {
+    width: 200px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;   
+    border: 1px solid #9A673D;
+    background: linear-gradient(262.88deg, #9A673D 8.15%, #9A673D 8.16%, #A56E41 97.79%);
+    border-radius: 70px 9px 9px 9px; 
+    cursor: pointer;   
+}
+
+
+aside {
+    padding: 4rem 4rem 1.7rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+aside img {
+    height: 2rem;
+}
+
+aside .card ul{
+    padding: 0;
+    list-style: none;
+}
+
+aside .card h3 {
+    margin-bottom:6px;
+    color: #AA695F;
+    font-weight: 600;
+}
+
+aside .card ul li {
+    color: #3C3C3C;
+}
+
+aside .card img {
+    margin: 0;
+    width: 23%;
+    height: 30%;
+}
+
+aside .card img:hover {
+  transition:0.3s ease;
+  box-shadow: 2px 2px 5px #888888;
+  border-radius: 50px;
+}
+
+footer{
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2 {
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer img{
+   height: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    #home {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #home img {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    #home div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home div p {
+        text-align: center;
+        color: #3C3C3C;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+    }
+
+    #summary > p, #features-app > p, #about-us > p {
+        font-size: 1.1rem;
+    }
+
+    .features .card {
+        margin: 20px;
+        width: 500px;
+    }
+
+    .features .card img {
+        height: 8.5rem;
+    }
+
+    .features .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .features .card p {
+        font-size: 1rem;
+    }
+
+
+    .team .card img {
+        height: 5rem;
+    }
+
+    .collect img{
+        display: none;
+    }
+
+    .team .card {
+        margin: 2rem;
+        padding: 0 10px;
+        width: 240px;
+        height: 280px;
+    }
+
+    #about-us .card h3 {
+        font-size: 1.1rem;
+    }
+
+    #about-us .card p {
+        font-size: 0.6rem;
+    }
+
+    #about-us .card button {
+        width: 180px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    header img {
+        margin: 0;
+        height: 2rem;
+    }
+
+    #home .home-content h2 {
+        font-size: 3rem;
+    }
+
+    #home img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    #home .home-content {
+       margin: 0;
+       padding: 0;
+    }
+
+    #home .home-content p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    #summary h2, #features-app h2, #about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    #summary p, #features-app>p, #about-us p {
+        padding: 1rem;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+
+    #summary hr {
+        width: 16.7rem;
+    }
+
+    #features-app hr {
+        width: 12rem;
+    }
+
+    #about-us hr {
+        width: 12.7rem;
+    }
+    
+    .features .card {
+        margin: 0 20px;
+        width: 1000px;
+    }
+
+    .features .card img {
+        height: 7.4rem;
+    }
+
+    .features .card p {
+        font-size: 0.7rem;
+    }
+
+    .team .card {
+        margin: 15px;
+        padding: 0 5px;
+        width: 170px;
+        height: 200px;
+    }
+
+    .team .card img {
+        margin-top: -10px;
+        height: 3rem;
+    }
+
+    #about-us .card h3 {
+        font-size: 0.7rem;
+    }
+
+    #about-us .card p {
+        padding: 5px 0 20px ;
+        font-size: 0.5rem;
+    }
+
+    #about-us .card button {
+        width: 120px;
+        font-size: 0.4rem;
+    }
+
+
+    aside .card h3{
+        font-size: 0.8rem;
+    }
+
+    aside .card ul{
+        margin: 1px 0;
+        font-size: 0.5rem;
+    }
+
+    footer h2 {
+        font-size: 0.8rem;
+    }
+
+    footer img {
+        height: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header img {
+        height: 1.5rem;
+    }
+
+    .navbar {
+        padding: 1.1rem 1.5rem;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-link {
+        font-size: 10px;
+    }
+
+    #home {
+        padding: 1.1rem 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #home img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #home .home-content {
+        
+        text-align: center;
+        margin: 0;
+    }
+
+    #home .home-content h2{
+        font-size: 1.5rem;
+    }
+
+    #home .home-content p {
+        width: 100%;
+        line-height: 1rem;
+        font-size: 0.6rem;
+    }
+
+    #summary h2, #features-app>h2, #about-us h2 {
+        font-size: 1.2rem;
+    }
+
+    #summary p, #features-app>p, #about-us p {
+        padding: 1rem;
+        margin: 0;
+        font-size: 0.48rem;
+    }
+
+    #summary {
+        padding: 1.1rem 1.5rem;
+    }
+
+    #summary hr {
+        width: 8rem;
+    }
+
+    #summary img {
+        width: 100%;
+    }
+
+    #features-app {
+        padding: 1.1rem 1.5rem;
+    }
+
+    #features-app hr {
+        width: 8rem;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        
+    }
+
+    .features .card {
+        margin: 20px;
+    }
+
+    .features .card img{
+        height: 5rem;
+    }
+
+    .features .card h3 {
+        font-size: 1rem;
+    }
+
+    .features .card p {
+        font-size: 0.6rem;
+        padding: 0;
+    }
+
+    #about-us {
+        padding: 1.1rem 1.5rem;
+    }
+
+    #about-us hr {
+        width: 8.8rem;
+    }
+
+    aside {
+        padding: 2rem 1.5rem 1.1rem;
+    }
+
+    aside img {
+        height: 1rem;
+    }
+
+    aside .card h3 {
+        font-size: 0.5rem;
+    }
+
+    footer{
+        padding: 1.1rem 1.5rem;
+    }
+
+    footer h2{
+        font-size: 0.4rem;
+    }
+
+    footer img {
+        height: 1rem;
+    }
+}
