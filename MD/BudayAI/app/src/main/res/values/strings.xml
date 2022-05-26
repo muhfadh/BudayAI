@@ -25,4 +25,15 @@
     <string name="map_style_normal">Normal</string>
     <string name="sample_number">2</string>
     <string name="budaya_bercerita">Budaya Bercerita</string>
+    <string name="budayai">BudayAI</string>
+    <string name="found_ornamen">Ornamen Budaya Ditemukan</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="hint_pass">*******</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_any_account">Don’t have any account?</string>
 </resources>
