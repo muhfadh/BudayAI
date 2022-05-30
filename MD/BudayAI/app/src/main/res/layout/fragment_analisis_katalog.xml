@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingTop="16dp" tools:context=".analisisKatalog.AnalisisKatalogFragment">
+    android:paddingTop="16dp"
+    android:background="@drawable/swipe_popup"
+    tools:context=".analisisKatalog.AnalisisKatalogFragment">
 
     <View
         android:id="@+id/splitter"
@@ -24,7 +26,7 @@
         android:layout_marginEnd="8dp"
         android:layout_toEndOf="@id/size_search"
         android:fontFamily="@font/poppins_semi_bold"
-        android:text="Ornamen Budaya Ditemukan"
+        android:text="@string/found_ornamen"
         android:textColor="@color/brown_light"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -12,18 +12,25 @@
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable-v24/bg_bottom_nav.xml" value="0.188" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable-v24/ic_map_default.xml" value="0.1525" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable-v24/ic_map_style_option.xml" value="0.184" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable/btn_auth.xml" value="0.184" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable/edit_text.xml" value="0.184" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.184" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable/swipe_popup.xml" value="0.184" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/font/font.xml" value="0.1923899102180419" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_detail.xml" value="0.14641885766092474" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_detail_ornamen.xml" value="0.22" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_list_katalog.xml" value="0.22" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_analisis_katalog.xml" value="0.16" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_analisis_katalog.xml" value="0.33" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_blank.xml" value="0.1455122393472348" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_deskripsi.xml" value="0.25" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_detail_location.xml" value="0.25" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_gallery.xml" value="0.14641885766092474" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_location.xml" value="0.18" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_login.xml" value="0.1675929884566054" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_login_popup.xml" value="0.33" />
+        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_register.xml" value="0.33" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_sejarah.xml" value="0.22" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_style_map.xml" value="0.22" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_type_maps.xml" value="0.1675929884566054" />
