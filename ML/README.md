@@ -1,12 +1,12 @@
 # The Documentation from Machine Learning Path
 
 ### Eval Metrics for each models
-- 1 = custom_ssd_mobilenet_v2_fpnlite_320x320_43_classes_1
-- 2 = custom_ssd_mobilenet_v2_fpnlite_320x320_43_classes_2
-- 3 = custom_ssd_mobilenet_v2_fpnlite_320x320_V2
-- 4 = custom_ssd_mobilenet_v2_fpnlite_320x320_V3
-- 5 = custom_ssd_mobilenet_v2_fpnlite_640x640_1
-- 6* = custom_centernet_resnet101_v1_fpn_512x512
+- 1 = custom_ssd_mobilenet_v2_fpnlite_320x320_43_classes_1      | BATCH_SIZE = 12 | min_depth = 16
+- 2 = custom_ssd_mobilenet_v2_fpnlite_320x320_43_classes_2      | BATCH_SIZE = 12 | min_depth = 8
+- 3 = custom_ssd_mobilenet_v2_fpnlite_320x320_V2                | BATCH_SIZE = 8
+- 4 = custom_ssd_mobilenet_v2_fpnlite_320x320_V3                | BATCH_SIZE = 12
+- 5 = custom_ssd_mobilenet_v2_fpnlite_640x640_1                 | BATCH_SIZE = 4
+- 6* = custom_centernet_resnet101_v1_fpn_512x512                | BATCH_SIZE = 2
 
 
 **Average Precision**
