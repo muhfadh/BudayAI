@@ -21,6 +21,32 @@
             android:background="@color/grey2"
             android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_suku"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="14dp"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintTop_toBottomOf="@+id/img_objek"
+                app:layout_constraintStart_toStartOf="@+id/img_objek"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/jenis_ornamen"
+                android:textSize="10sp"
+                android:lines="1"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
             <ImageView
                 android:id="@+id/img_objek"
                 android:layout_width="210dp"
@@ -30,33 +56,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nama_suku"
-                android:layout_marginStart="14dp"
-                android:fontFamily="@font/poppins_medium"
-                app:layout_constraintTop_toBottomOf="@+id/img_objek"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/img_objek"
-                android:textColor="@color/black"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/tv_jenis"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="@string/jenis_ornamen"
-                android:textSize="10sp"
-                android:fontFamily="@font/poppins_regular"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/tv_name"
-                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

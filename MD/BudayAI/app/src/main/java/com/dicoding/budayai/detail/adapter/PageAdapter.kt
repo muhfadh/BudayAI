@@ -6,19 +6,17 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.dicoding.budayai.R
 import com.dicoding.budayai.detail.DeskripsiFragment
-import com.dicoding.budayai.detail.GalleryFragment
 import com.dicoding.budayai.detail.SejarahFragment
 
 @Suppress("DEPRECATION")
 class PageAdapter(private val mContext: Context, fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
-    override fun getCount(): Int = 3
+    override fun getCount(): Int = 2
 
     override fun getItem(position: Int): Fragment {
         var fragment: Fragment? = null
         when(position){
             0 -> fragment = DeskripsiFragment()
             1 -> fragment = SejarahFragment()
-            2 -> fragment = GalleryFragment()
         }
         return fragment as Fragment
     }
@@ -30,8 +28,7 @@ class PageAdapter(private val mContext: Context, fm: FragmentManager) : Fragment
     companion object {
         private val TAB_TITLES = intArrayOf(
             R.string.title_tab_description,
-            R.string.title_tab_sejarah,
-            R.string.title_tab_gallery
+            R.string.title_tab_sejarah
         )
     }
 }

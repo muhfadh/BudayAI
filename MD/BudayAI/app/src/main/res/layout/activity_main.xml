@@ -7,6 +7,15 @@
     android:id="@+id/activity_main"
     tools:context=".MainActivity">
 
+    <fragment
+        android:id="@+id/fragment_view"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/buday_navigation"
+        tools:ignore="FragmentTagUsage"/>
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
@@ -14,6 +23,7 @@
         app:fabCradleMargin="20dp"
         app:fabCradleVerticalOffset="10dp"
         app:fabCradleRoundedCornerRadius="20dp"
+        tools:ignore="FragmentTagUsage"
         android:layout_gravity="bottom">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -32,13 +42,5 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_photo_camera_24"
         app:layout_anchor="@id/bottom_bar"/>
-
-    <fragment
-        android:id="@+id/fragment_view"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/buday_navigation" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

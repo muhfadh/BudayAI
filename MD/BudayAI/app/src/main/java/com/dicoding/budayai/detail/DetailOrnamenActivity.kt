@@ -18,4 +18,8 @@ class DetailOrnamenActivity : AppCompatActivity() {
         binding.viewPager.adapter = sectionsPagerAdapter
         binding.tabs.setupWithViewPager(binding.viewPager)
     }
+
+    companion object {
+        val DETAIL = "DETAIL"
+    }
 }

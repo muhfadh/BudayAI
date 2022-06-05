@@ -74,19 +74,23 @@
                 android:id="@+id/rv_populer"
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
-                android:orientation="horizontal"
-                android:scrollbars="horizontal"
-                tools:listitem="@layout/item_objek"/>
+                tools:listitem="@layout/item_objek" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_artikel_budaya"
+                android:text="@string/title_ornamen_budaya"
                 android:textSize="15sp"
                 android:layout_marginTop="36dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:layout_marginStart="20dp"
                 android:textColor="@color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ornamen"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                tools:listitem="@layout/item_suku" />
 
         </LinearLayout>
 

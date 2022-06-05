@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_nav"
+    app:startDestination="@id/locationFragment">
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.dicoding.budayai.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" >
+        <action
+            android:id="@+id/action_locationFragment_to_styleMapFragment2"
+            app:destination="@id/styleMapFragment" />
+        <action
+            android:id="@+id/action_locationFragment_to_detailLocationFragment"
+            app:destination="@id/detailLocationFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/styleMapFragment"
+        android:name="com.dicoding.budayai.location.option.StyleMapFragment"
+        android:label="fragment_style_map"
+        tools:layout="@layout/fragment_style_map" />
+    <dialog
+        android:id="@+id/detailLocationFragment"
+        android:name="com.dicoding.budayai.location.DetailLocationFragment"
+        android:label="fragment_detail_location"
+        tools:layout="@layout/fragment_detail_location">
+
+        <argument
+            android:name="type"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="detail"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="photo_url"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+
+</navigation>
