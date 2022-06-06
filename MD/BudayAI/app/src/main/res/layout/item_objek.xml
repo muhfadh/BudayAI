@@ -18,8 +18,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:background="@color/grey2"
-            android:layout_height="wrap_content">
+            android:background="@color/green"
+            android:layout_height="260dp">
 
             <TextView
                 android:id="@+id/tv_name"
@@ -31,14 +31,14 @@
                 android:fontFamily="@font/poppins_medium"
                 app:layout_constraintTop_toBottomOf="@+id/img_objek"
                 app:layout_constraintStart_toStartOf="@+id/img_objek"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="13sp" />
 
             <TextView
                 android:id="@+id/tv_type"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:text="@string/jenis_ornamen"
                 android:textSize="10sp"
                 android:lines="1"
