@@ -48,7 +48,7 @@ class ListHomeAdapter : RecyclerView.Adapter<ListHomeAdapter.RecyclerViewHolder>
             .apply(RequestOptions().override(300, 300))
             .into(holder.image)
         with(holder){
-            name.text = list.ethnicName
+            name.text = "Suku " + list.ethnicName
             type.text = list.type
         }
     }

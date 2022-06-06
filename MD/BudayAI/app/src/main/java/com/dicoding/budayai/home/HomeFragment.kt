@@ -1,5 +1,6 @@
 package com.dicoding.budayai.home
 
+import android.Manifest
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -15,6 +16,7 @@ import com.dicoding.budayai.api.adapter.ListHomeAdapter
 import com.dicoding.budayai.api.response.ResponseClassItem
 import com.dicoding.budayai.api.response.ResponseHomeItem
 import com.dicoding.budayai.databinding.FragmentHomeBinding
+import com.dicoding.budayai.detail.DetailOrnamenActivity
 import com.dicoding.budayai.viewModel.FactoryModel
 
 class HomeFragment : Fragment() {
@@ -71,9 +73,9 @@ class HomeFragment : Fragment() {
             override fun onItemClicked(data: ResponseClassItem) {
                 showSelectedData(data)
             }
-
         })
     }
+
 
     private fun showSelectedData(data: ResponseClassItem){
         ResponseClassItem(
@@ -85,9 +87,9 @@ class HomeFragment : Fragment() {
             data.type,
             data.lat
         )
-//        val intent = Intent(context, DetailOrnamenActivity::class.java)
-//        intent.putExtra(DetailOrnamenActivity.DETAIL, data)
-//        this.startActivity(intent)
+        val intent = Intent(context, DetailOrnamenActivity::class.java)
+        intent.putExtra(DetailOrnamenActivity.DETAIL, data)
+        this.startActivity(intent)
     }
 
     override fun onCreateView(
@@ -96,5 +98,9 @@ class HomeFragment : Fragment() {
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    companion object {
+        val DETAIL = "DETAIL"
     }
 }
