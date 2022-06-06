@@ -22,6 +22,7 @@
         android:name="com.dicoding.budayai.location.option.StyleMapFragment"
         android:label="fragment_style_map"
         tools:layout="@layout/fragment_style_map" />
+
     <dialog
         android:id="@+id/detailLocationFragment"
         android:name="com.dicoding.budayai.location.DetailLocationFragment"

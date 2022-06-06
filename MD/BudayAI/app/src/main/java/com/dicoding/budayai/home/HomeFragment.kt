@@ -11,7 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.budayai.MainActivity
 import com.dicoding.budayai.R
 import com.dicoding.budayai.api.adapter.ListAdapter
+import com.dicoding.budayai.api.adapter.ListHomeAdapter
 import com.dicoding.budayai.api.response.ResponseClassItem
+import com.dicoding.budayai.api.response.ResponseHomeItem
 import com.dicoding.budayai.databinding.FragmentHomeBinding
 import com.dicoding.budayai.viewModel.FactoryModel
 
@@ -19,6 +21,7 @@ class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
     private lateinit var listAdapter: ListAdapter
+    private lateinit var listHomeAdapter: ListHomeAdapter
     private lateinit var factoryModel: FactoryModel
     private val homeModel: HomeModel by activityViewModels{factoryModel}
 
@@ -27,20 +30,30 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         factoryModel = FactoryModel.getInstance(requireActivity())
+        listHomeAdapter = ListHomeAdapter()
         listAdapter = ListAdapter()
 
         binding.layoutSwipe.setOnRefreshListener {
+            homeModel.getDataHome()
             homeModel.getData()
         }
 
+        homeModel.getDataHome()
         homeModel.getData()
 
-        binding.rvPopuler.layoutManager = LinearLayoutManager(activity)
+        binding.rvPopuler.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvOrnamen.layoutManager = LinearLayoutManager(activity)
+
+        homeModel.dataHome.observe(viewLifecycleOwner){
+            listHomeAdapter.setDataHome(it as ArrayList<ResponseHomeItem>)
+        }
+
         homeModel.data.observe(viewLifecycleOwner){
             listAdapter.setData(it as ArrayList<ResponseClassItem>)
         }
 
-        binding.rvPopuler.adapter = listAdapter
+        binding.rvPopuler.adapter = listHomeAdapter
+        binding.rvOrnamen.adapter = listAdapter
 
         binding.homeToolbar.inflateMenu(R.menu.profile_menu)
 

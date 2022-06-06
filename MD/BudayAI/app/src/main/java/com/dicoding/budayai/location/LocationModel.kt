@@ -25,20 +25,6 @@ class LocationModel(private val dataRepository: DataRepository): ViewModel() {
     fun getDataLocation(){
         val client = dataRepository.getMap()
         client.enqueue(object : retrofit2.Callback<List<ResponseClassItem>>{
-
-            //            override fun onResponse(
-//                call: Call<ResponseClass>,
-//                response: retrofit2.Response<ResponseClass>
-//            ) {
-//                if (response.isSuccessful){
-//                    val responses = response.body()?.responseClass
-//                    _data.postValue(responses!! as ArrayList<ResponseClassItem>?)
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<ResponseClass>, t: Throwable) {
-//                //no action
-//            }
             override fun onResponse(
                 call: Call<List<ResponseClassItem>>,
                 response: Response<List<ResponseClassItem>>

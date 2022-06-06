@@ -71,7 +71,7 @@
             android:id="@+id/btn_detail"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginStart="220dp"
+            android:layout_marginStart="315dp"
             android:layout_marginBottom="35dp"
             android:src="@drawable/ic_baseline_navigate_next_24"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -53,7 +53,6 @@
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="24dp">
 
         <LinearLayout
@@ -73,7 +72,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_populer"
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="270dp"
                 tools:listitem="@layout/item_objek" />
 
             <TextView
@@ -81,15 +80,28 @@
                 android:layout_height="wrap_content"
                 android:text="@string/title_ornamen_budaya"
                 android:textSize="15sp"
-                android:layout_marginTop="36dp"
+                android:layout_marginTop="18dp"
                 android:fontFamily="@font/poppins_semi_bold"
                 android:layout_marginStart="20dp"
                 android:textColor="@color/black"/>
 
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:background="#5BFFFFFF"
+                app:iconifiedByDefault="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/img_objek"
+                app:queryHint="Cari Ornamen!!" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_ornamen"
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="320dp"
                 tools:listitem="@layout/item_suku" />
 
         </LinearLayout>

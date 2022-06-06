@@ -12,11 +12,9 @@ import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.commit
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.dicoding.budayai.R
-import com.dicoding.budayai.databinding.FragmentHomeBinding
 import com.dicoding.budayai.databinding.FragmentLocationBinding
 import com.dicoding.budayai.viewModel.FactoryModel
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -34,9 +32,7 @@ class LocationFragment : Fragment() {
     private val locationModel: LocationModel by activityViewModels{ factoryModel }
 
     private fun fetch(){
-//        locationModel.getId().observe(viewLifecycleOwner){
-//            locationModel.getDataLocation(it)
-//        }
+        locationModel.getDataLocation()
     }
 
     private fun getLocation(){
@@ -50,8 +46,8 @@ class LocationFragment : Fragment() {
 
     private val permissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()){
             isPerm : Boolean -> if (isPerm){
-        getLocation()
-    }
+                getLocation()
+            }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -67,7 +63,7 @@ class LocationFragment : Fragment() {
 
         val action = LocationFragmentDirections.actionLocationFragmentToStyleMapFragment2()
         binding.optionStyleMap.setOnClickListener{
-            view.findNavController().navigate(action)
+            view.findNavController().navigate(R.id.action_locationFragment_to_styleMapFragment2)
         }
     }
 
@@ -120,7 +116,7 @@ class LocationFragment : Fragment() {
                 it.id == m.tag
             }
             dataModel?.let {
-                val latLog = LatLng(it.lat!!, it.lon!!)
+                val latLog = LatLng(it.lat, it.lon)
                 val toDetail = LocationFragmentDirections.actionLocationFragmentToDetailLocationFragment(
                     it.type,
                     it.detail,
@@ -151,13 +147,13 @@ class LocationFragment : Fragment() {
         locationModel.data.observe(viewLifecycleOwner){
             it?.let {
                 for (data in it){
-                    val lat: Double = data.lat!!
-                    val lon: Double = data.lon!!
+                    val lat: Double = data.lat
+                    val lon: Double = data.lon
                     val latLng = LatLng(lat, lon)
                     googleMap.addMarker(MarkerOptions().position(latLng).title(data.type))?.tag = data.id
                 }
 
-                val latLng = LatLng(it[0].lat!!, it[0].lon!!)
+                val latLng = LatLng(it[0].lat, it[0].lon)
                 googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5f))
             }
         }

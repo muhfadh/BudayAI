@@ -5,6 +5,7 @@ import androidx.lifecycle.asLiveData
 import com.dicoding.budayai.api.ApiService
 import com.dicoding.budayai.api.DataPreferences
 import com.dicoding.budayai.api.response.ResponseClassItem
+import com.dicoding.budayai.api.response.ResponseHomeItem
 import com.dicoding.budayai.location.StyleMap
 import com.dicoding.budayai.location.TypeMap
 import okhttp3.OkHttpClient
@@ -14,6 +15,21 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class DataRepository (private val dataPreferences: DataPreferences, private val apiService: ApiService){
+
+    fun getDataHome(): Call<List<ResponseHomeItem>> {
+        val loggingInterceptor = HttpLoggingInterceptor()
+        loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+        val client = OkHttpClient.Builder()
+            .addInterceptor(loggingInterceptor)
+            .build()
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://us-central1-budayai-c22-ps195.cloudfunctions.net/app/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(client)
+            .build()
+        val apiService = retrofit.create(ApiService::class.java)
+        return apiService.getHome()
+    }
 
     fun getData(): Call<List<ResponseClassItem>> {
         val loggingInterceptor = HttpLoggingInterceptor()

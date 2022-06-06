@@ -3,7 +3,6 @@ package com.dicoding.budayai.api.adapter
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dicoding.budayai.api.response.ResponseClassItem
 import com.dicoding.budayai.databinding.ItemObjekBinding
+import com.dicoding.budayai.databinding.ItemSukuBinding
 import com.dicoding.budayai.detail.DetailOrnamenActivity
 import com.dicoding.budayai.util.Callback
 
@@ -24,9 +24,6 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.RecyclerViewHolder>(){
 
         arrayListOrnamen = updateData
         result.dispatchUpdatesTo(this)
-//        arrayListOrnamen.clear()
-//        arrayListOrnamen.addAll(data)
-//        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(
@@ -34,18 +31,18 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.RecyclerViewHolder>(){
         viewType: Int
     ): ListAdapter.RecyclerViewHolder {
         mContext = parent.context
-        return  RecyclerViewHolder(ItemObjekBinding.inflate(LayoutInflater.from(parent.context), parent, false))
+        return  RecyclerViewHolder(ItemSukuBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: RecyclerViewHolder, position: Int) {
         val list = arrayListOrnamen[position]
         Glide.with(holder.itemView.context)
             .load(list.photoUrl)
-            .apply(RequestOptions().override(210, 210))
+            .apply(RequestOptions().override(300, 300))
             .into(holder.image)
         with(holder){
             name.text = list.type
-            type.text = list.type
+            type.text = list.detail
             itemView.setOnClickListener {
                 val data = ResponseClassItem(
                     list.lon,
@@ -65,10 +62,10 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.RecyclerViewHolder>(){
 
     override fun getItemCount(): Int = arrayListOrnamen.size
 
-    inner class RecyclerViewHolder(binding: ItemObjekBinding): RecyclerView.ViewHolder(binding.root){
-        var image = binding.imgObjek
-        var name = binding.tvName
-        var type = binding.tvType
+    inner class RecyclerViewHolder(binding: ItemSukuBinding): RecyclerView.ViewHolder(binding.root){
+        var image = binding.avatar
+        var name = binding.tvNameOrnamen
+        var type = binding.tvDescription
     }
 
     interface OnItemClicked {
