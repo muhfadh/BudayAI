@@ -7,6 +7,7 @@
     tools:context=".detail.SejarahFragment">
 
     <TextView
+        android:id="@+id/tv_sejarah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"

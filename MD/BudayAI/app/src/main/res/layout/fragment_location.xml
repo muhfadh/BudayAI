@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/locationFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".location.LocationFragment">
 
     <fragment
@@ -10,6 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="FragmentTagUsage"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/map_nav"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
     <ImageView
