@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BudayAI">
         <activity
+            android:name=".location.LocationActivity"
+            android:exported="false" />
+        <activity
             android:name=".analys.CameraActivity"
             android:exported="false" />
 
@@ -31,9 +34,6 @@
 
         <activity
             android:name=".detail.DetailOrnamenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".listKatalog.ListKatalogActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

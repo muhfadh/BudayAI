@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/location_activity"
+    tools:context=".location.LocationActivity">
+
+    <fragment
+        android:id="@+id/fragmentContainerView5"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/map_nav" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/option_style_map"-->
+<!--        android:layout_width="34dp"-->
+<!--        android:layout_height="34dp"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:layout_margin="32dp"-->
+<!--        android:src="@drawable/ic_map_style_option"/>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
