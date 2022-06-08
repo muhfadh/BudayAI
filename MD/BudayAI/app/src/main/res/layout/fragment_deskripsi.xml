@@ -15,6 +15,7 @@
         android:layout_margin="18dp"
         android:textSize="14sp"
         android:textColor="@color/grey"
+        android:textAlignment="center"
         android:fontFamily="@font/poppins_regular"
         android:maxLines="10"
         android:ellipsize="end"

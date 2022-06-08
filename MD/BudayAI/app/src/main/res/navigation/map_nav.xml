@@ -3,20 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/map_nav"
-    app:startDestination="@id/locationFragment">
+    app:startDestination="@id/locationFragment2">
+
 
     <fragment
-        android:id="@+id/locationFragment"
+        android:id="@+id/locationFragment2"
         android:name="com.dicoding.budayai.location.LocationFragment"
         android:label="fragment_location"
         tools:layout="@layout/fragment_location" >
         <action
-            android:id="@+id/action_locationFragment_to_styleMapFragment2"
+            android:id="@+id/action_locationFragment2_to_styleMapFragment"
             app:destination="@id/styleMapFragment" />
         <action
-            android:id="@+id/action_locationFragment_to_detailLocationFragment"
+            android:id="@+id/action_locationFragment2_to_detailLocationFragment"
             app:destination="@id/detailLocationFragment" />
     </fragment>
+
     <dialog
         android:id="@+id/styleMapFragment"
         android:name="com.dicoding.budayai.location.option.StyleMapFragment"
@@ -42,5 +44,4 @@
             app:argType="string"
             app:nullable="true" />
     </dialog>
-
 </navigation>

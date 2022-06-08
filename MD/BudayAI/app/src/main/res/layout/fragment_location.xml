@@ -3,24 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/locationFragment"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".location.LocationFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_layout"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="24dp"
+        android:alpha="0.5">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_maps"
+            app:elevation="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/location_view"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <fragment
         android:id="@+id/maps_location"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="FragmentTagUsage"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/map_nav"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
-
-    <ImageView
-        android:id="@+id/option_style_map"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
-        android:layout_gravity="end"
-        android:layout_margin="32dp"
-        android:src="@drawable/ic_map_style_option"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -23,7 +23,7 @@ class StyleMapFragment : BottomSheetDialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentStyleMapBinding.inflate(inflater, container, false)
         return binding.root
     }
