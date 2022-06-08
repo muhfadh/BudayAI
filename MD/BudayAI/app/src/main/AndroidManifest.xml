@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BudayAI">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".location.LocationActivity"
             android:exported="false" />
         <activity
@@ -36,7 +39,7 @@
             android:name=".detail.DetailOrnamenActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
