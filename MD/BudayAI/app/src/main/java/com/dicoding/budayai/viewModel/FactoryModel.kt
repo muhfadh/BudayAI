@@ -3,6 +3,7 @@ package com.dicoding.budayai.viewModel
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.dicoding.budayai.analys.AnalysModel
 import com.dicoding.budayai.api.Injection
 import com.dicoding.budayai.api.repository.DataRepository
 import com.dicoding.budayai.home.HomeModel
@@ -16,6 +17,7 @@ class FactoryModel private constructor(private val dataRepository: DataRepositor
         return when{
             modelClass.isAssignableFrom(HomeModel::class.java) -> HomeModel(dataRepository) as T
             modelClass.isAssignableFrom(LocationModel::class.java) -> LocationModel(dataRepository) as T
+            modelClass.isAssignableFrom(AnalysModel::class.java) -> AnalysModel(dataRepository) as T
             else -> throw IllegalArgumentException("ViewModel Not Found: ${modelClass.name}")
         }
     }
