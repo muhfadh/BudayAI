@@ -15,5 +15,10 @@
         android:name="com.dicoding.budayai.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_analys"
+        android:name="com.dicoding.budayai.analys.AnalysFragment"
+        android:label="fragment_analys"
+        tools:layout="@layout/fragment_analys" />
 
 </navigation>
