@@ -3,9 +3,7 @@ package com.dicoding.budayai.auth
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.LinearLayout
 import com.dicoding.budayai.MainActivity
 import com.dicoding.budayai.R
 import com.dicoding.budayai.databinding.ActivityLoginBinding

@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dicoding.budayai.api.response.ResponseClassItem
-import com.dicoding.budayai.databinding.ItemObjekBinding
 import com.dicoding.budayai.databinding.ItemSukuBinding
 import com.dicoding.budayai.detail.DetailOrnamenActivity
 import com.dicoding.budayai.util.Callback
