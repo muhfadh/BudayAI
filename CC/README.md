@@ -74,7 +74,7 @@
   - `type` as `string`
   - `detail` as `string`
 - Response
-  - `"message: data created successfully!"`\
+  - `"message: data created successfully!"`<br/>
 
 ## Our Project Using Google Cloud Platform
 ### Description
@@ -83,11 +83,11 @@ For Design Architecture, we use Cloud Function and Cloud Run to deploy the appli
 - `/class`
 - `/cultural`
 - `/detail`
-These endpoints are used to display the cultural data set.\
-The Cloud Functions Architecture is here :\
+These endpoints are used to display the cultural data set.<br/>
+The Cloud Functions Architecture is here :<br/>
 ![Architecture Cloud Functions](https://storage.googleapis.com/budayai-datasets/RestAPI.png)
 
-The environment we set up in Cloud Run was:\
+The environment we set up in Cloud Run was:<br/>
 - Build Python App with Flask
 - Push Python App to Github
 - Create an Image with Docker
