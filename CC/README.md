@@ -85,7 +85,6 @@ For Design Architecture, we use Cloud Function and Cloud Run to deploy the appli
 - `/detail`
 <br/>
 The Cloud Functions Architecture is here :
-<br/>
 ![Architecture Cloud Functions](https://storage.googleapis.com/budayai-datasets/RestAPI.png)
 
 The environment we set up in Cloud Run was:<br/>
