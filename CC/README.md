@@ -74,20 +74,20 @@
   - `type` as `string`
   - `detail` as `string`
 - Response
-  - `"message: data created successfully!"`
+  - `"message: data created successfully!"`\
 
-## The Project using Google Cloud Platform
+## Our Project Using Google Cloud Platform
 ### Description
 For Design Architecture, we use Cloud Function and Cloud Run to deploy the application. For Cloud Function using Express JS for the local server, and the database using Firestore Database (NoSQL). There are 4 Endpoints that can be used (consume) by Mobile Development :
-- /home
-- /class
-- /cultural
-- /detail
-These endpoints are used to display the cultural data set.
-The Cloud Functions Architecture is here :
+- `/home`
+- `/class`
+- `/cultural`
+- `/detail`
+These endpoints are used to display the cultural data set.\
+The Cloud Functions Architecture is here :\
 ![Architecture Cloud Functions](https://storage.googleapis.com/budayai-datasets/RestAPI.png)
 
-The environment we set up in Cloud Run was:
+The environment we set up in Cloud Run was:\
 - Build Python App with Flask
 - Push Python App to Github
 - Create an Image with Docker
