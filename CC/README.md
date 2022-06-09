@@ -1,5 +1,10 @@
 # The Documentation from Cloud Computing Learning Path
-> Build a REST API for Mobile Development Learning Path
+> - Build an our Landing Page Website
+> - Build a REST API for Mobile Development Learning Path
+
+## Landing Page Website
+> Use HTML Semantic, Vanilla CSS and JavaScript.
+> This is a link for our website : [BudayAI-Web](https://buday-ai-vickyadri29.vercel.app/)
 
 ## Endpoint
 > The Main Endpoint is [Here](https://us-central1-budayai-c22-ps195.cloudfunctions.net/app/).
