@@ -82,7 +82,7 @@ For Design Architecture, we use Cloud Function and Cloud Run to deploy the appli
 - `/home`
 - `/class`
 - `/cultural`
-- `/detail`
+- `/detail` <br />
 These endpoints are used to display the cultural data set.<br/>
 The Cloud Functions Architecture is here :<br/>
 ![Architecture Cloud Functions](https://storage.googleapis.com/budayai-datasets/RestAPI.png)
