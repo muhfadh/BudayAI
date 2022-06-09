@@ -75,3 +75,5 @@
   - `detail` as `string`
 - Response
   - `"message: data created successfully!"`
+
+![Rest-API](https://storage.googleapis.com/budayai-datasets/FlaskApp.png)
