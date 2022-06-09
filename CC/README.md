@@ -78,13 +78,14 @@
 
 ## Our Project Using Google Cloud Platform
 ### Description
-For Design Architecture, we use Cloud Function and Cloud Run to deploy the application. For Cloud Function using Express JS for the local server, and the database using Firestore Database (NoSQL). There are 4 Endpoints that can be used (consume) by Mobile Development :
+For Design Architecture, we use Cloud Function and Cloud Run to deploy the application. For Cloud Function using Express JS for the local server, and the database using Firestore Database (NoSQL). There are 4 Endpoints that can be used (consume) by Mobile Development. These endpoints are used to display the cultural data set.
 - `/home`
 - `/class`
 - `/cultural`
 - `/detail`
-These endpoints are used to display the cultural data set.<br/>
-The Cloud Functions Architecture is here :<br/>
+<br/>
+The Cloud Functions Architecture is here :
+<br/>
 ![Architecture Cloud Functions](https://storage.googleapis.com/budayai-datasets/RestAPI.png)
 
 The environment we set up in Cloud Run was:<br/>
