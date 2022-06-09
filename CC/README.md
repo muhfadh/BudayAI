@@ -19,7 +19,7 @@
   - `photo_url` as `string`
 - Response
   - `"message: data created successfully!"`
-\
+  - 
 ### Class
 - URL
   - `/api/v1/home`
@@ -38,7 +38,7 @@
   - `long` as `string`, to get a longtitude from Google Maps API to show the maps
 - Response
   - `"message: data created successfully!"`
-\
+
 ### Cultural
 - URL
   - `/api/v1/cultural`
@@ -54,7 +54,7 @@
   - `description` as `string`
 - Response
   - `"message: data created successfully!"`
-\
+
 ### Detail
 - URL
   - `/api/v1/detail`
