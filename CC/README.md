@@ -83,11 +83,10 @@ For Design Architecture, we use Cloud Function and Cloud Run to deploy the appli
 - `/class`
 - `/cultural`
 - `/detail`
-<br/>
 The Cloud Functions Architecture is here :
 ![Cloud Functions](https://storage.googleapis.com/budayai-datasets/RestAPI.png)
 
-The environment we set up in Cloud Run was:<br/>
+The environment we set up in Cloud Run was:
 - Build Python App with Flask
 - Push Python App to Github
 - Create an Image with Docker
