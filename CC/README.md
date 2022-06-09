@@ -82,7 +82,7 @@ For Design Architecture, we use Cloud Function and Cloud Run to deploy the appli
 - `/home`
 - `/class`
 - `/cultural`
-- `/detail` (<-- two spaces)
+- `/detail` __
 The Cloud Functions Architecture is here :
 ![Cloud Functions](https://storage.googleapis.com/budayai-datasets/RestAPI.png)
 
