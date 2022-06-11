@@ -17,7 +17,6 @@ class FactoryModel private constructor(private val dataRepository: DataRepositor
         return when{
             modelClass.isAssignableFrom(HomeModel::class.java) -> HomeModel(dataRepository) as T
             modelClass.isAssignableFrom(LocationModel::class.java) -> LocationModel(dataRepository) as T
-            modelClass.isAssignableFrom(AnalysModel::class.java) -> AnalysModel(dataRepository) as T
             else -> throw IllegalArgumentException("ViewModel Not Found: ${modelClass.name}")
         }
     }

@@ -41,4 +41,5 @@
     <string name="error_took_image">Error Take Image</string>
     <string name="error">Error</string>
     <string name="choose_image">Choose Image</string>
+    <string name="required">Required</string>
 </resources>
