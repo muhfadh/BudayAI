@@ -3,7 +3,6 @@ package com.dicoding.budayai.viewModel
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.budayai.analys.AnalysModel
 import com.dicoding.budayai.api.Injection
 import com.dicoding.budayai.api.repository.DataRepository
 import com.dicoding.budayai.home.HomeModel

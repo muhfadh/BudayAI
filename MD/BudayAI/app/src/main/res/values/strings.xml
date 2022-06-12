@@ -42,4 +42,7 @@
     <string name="error">Error</string>
     <string name="choose_image">Choose Image</string>
     <string name="required">Required</string>
+    <string name="ornamen_name">Ornamen Name</string>
+    <string name="score_detection">Score Detection</string>
+    <string name="result">Result:</string>
 </resources>
