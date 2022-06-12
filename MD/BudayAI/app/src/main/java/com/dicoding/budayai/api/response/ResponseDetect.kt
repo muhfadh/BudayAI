@@ -1,7 +1,10 @@
 package com.dicoding.budayai.api.response
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class ResponseDetect(
 
 	@field:SerializedName("detection_classes")
@@ -21,4 +24,4 @@ data class ResponseDetect(
 
 	@field:SerializedName("message")
 	val message: String
-)
+): Parcelable
