@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginLeft="12dp"
     android:layout_marginTop="4dp"
     android:layout_marginBottom="4dp"
@@ -19,7 +19,9 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/avatar"
+            tools:ignore="ImageContrastCheck"
             android:layout_width="92dp"
+            android:transitionName="detail_image"
             android:layout_height="92dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
