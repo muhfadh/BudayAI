@@ -13,8 +13,9 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
-import com.bumptech.glide.Glide
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.budayai.R
+import com.dicoding.budayai.api.adapter.AnalysAdapter
 import com.dicoding.budayai.databinding.FragmentAnalysBinding
 import com.dicoding.budayai.util.reduceFileImage
 import com.dicoding.budayai.util.rotateBitmap
@@ -30,6 +31,7 @@ import java.io.File
 class AnalysFragment : Fragment() {
 
     private lateinit var binding: FragmentAnalysBinding
+    private lateinit var analysAdapter: AnalysAdapter
     private lateinit var result: Bitmap
     private var getImage: File? = null
     private lateinit var detectModel: DetectModel
@@ -55,7 +57,9 @@ class AnalysFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        analysAdapter = AnalysAdapter()
         detectModel = DetectModel.getInstance(requireActivity())
+
         binding.btnUpload.setOnClickListener {
             val select_model = binding.tvSelectModel.text.toString()
             if (select_model.isNotEmpty()){
@@ -64,17 +68,19 @@ class AnalysFragment : Fragment() {
                 Toast.makeText(activity, R.string.required, Toast.LENGTH_SHORT).show()
             }
 
-            analysModel.analys.observe(requireActivity()){
+            binding.rvResult.layoutManager = LinearLayoutManager(activity)
+
+            analysModel.analys.observe(viewLifecycleOwner){
                 if (it.error == false){
-                    Glide.with(this).load(it.imageUrl).into(binding.avatar)
-                    binding.tvNameCategories.text = it.listCategories[0]
-                    binding.tvScores.text = it.detectionScores[0].toString()
+                    analysAdapter.setAnalys(listOf(it))
                     Toast.makeText(activity, R.string.detect_success, Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(activity, R.string.detect_failed, Toast.LENGTH_SHORT).show()
                     startActivity(Intent(context, AnalysFragment::class.java))
                 }
             }
+
+            binding.rvResult.adapter = analysAdapter
         }
 
         binding.btnTookGalery.setOnClickListener {
