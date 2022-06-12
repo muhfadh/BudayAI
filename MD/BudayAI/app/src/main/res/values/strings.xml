@@ -45,4 +45,8 @@
     <string name="ornamen_name">Ornamen Name</string>
     <string name="score_detection">Score Detection</string>
     <string name="result">Result:</string>
+    <string-array name="models">
+        <item>Model 1</item>
+        <item>Model 2</item>
+    </string-array>
 </resources>

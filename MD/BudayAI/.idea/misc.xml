@@ -20,7 +20,6 @@
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable/scan.xml" value="0.147" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/drawable/swipe_popup.xml" value="0.184" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/font/font.xml" value="0.1923899102180419" />
-        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_analys.xml" value="0.1" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_auth.xml" value="0.1675929884566054" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_camera.xml" value="0.14641885766092474" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_detail.xml" value="0.14641885766092474" />
@@ -32,7 +31,6 @@
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_map.xml" value="0.1675929884566054" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_analisis_katalog.xml" value="0.33" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_analys.xml" value="0.25" />
-        <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_analys_result.xml" value="0.5" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_blank.xml" value="0.1455122393472348" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_deskripsi.xml" value="0.25" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_detail_image_analys.xml" value="0.1675929884566054" />
@@ -53,15 +51,21 @@
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/menu/location_menu.xml" value="0.1675929884566054" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/menu/map_option.xml" value="0.1675929884566054" />
         <entry key="..\:/BudayAI/MD/BudayAI/app/src/main/res/menu/profile_menu.xml" value="0.1675929884566054" />
-        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_detail_ornamen.xml" value="0.25416666666666665" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_detail_ornamen.xml" value="0.3446676970633694" />
         <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/activity_login.xml" value="0.22056159420289856" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/dropdown_item.xml" value="0.264" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_analisis_katalog.xml" value="0.2346014492753623" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_analys.xml" value="0.264" />
         <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_deskripsi.xml" value="0.25416666666666665" />
         <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
-        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_login_popup.xml" value="0.2" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_login_popup.xml" value="0.4" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_register.xml" value="0.4" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_sejarah.xml" value="0.2" />
         <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/fragment_style_map.xml" value="0.17980072463768115" />
         <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/item_objek.xml" value="0.72" />
-        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/item_suku.xml" value="0.4" />
+        <entry key="..\:/KULIAH/BANGKIT/Capstone/BudayAI/MD/BudayAI/app/src/main/res/layout/item_suku.xml" value="0.24876847290640394" />
       </map>
     </option>
   </component>
