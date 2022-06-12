@@ -52,32 +52,39 @@
                 android:layout_margin="16dp" />
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/tv_select_model"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:inputType="textMultiLine"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_image"
-            app:layout_constraintStart_toStartOf="parent"
-            android:ems="20"
-            tools:text="Select Model"
-            android:hint="Select Model"/>
-
         <Button
             android:id="@+id/btn_upload"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/poppins_semi_bold"
             android:backgroundTint="@color/choco"
+            android:enabled="false"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Predict"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_select_model"
-            android:enabled="false"
-            android:text="Predict"/>
+            app:layout_constraintTop_toBottomOf="@+id/dropdown"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dropdown"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/v_image">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Model" />
+
+        </com.google.android.material.textfield.TextInputLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
