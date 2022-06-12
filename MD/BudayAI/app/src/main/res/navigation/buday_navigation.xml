@@ -19,6 +19,20 @@
         android:id="@+id/navigation_analys"
         android:name="com.dicoding.budayai.analys.AnalysFragment"
         android:label="fragment_analys"
-        tools:layout="@layout/fragment_analys" />
+        tools:layout="@layout/fragment_analys" >
+        <action
+            android:id="@+id/action_navigation_analys_to_detailImageAnalysFragment"
+            app:destination="@id/detailImageAnalysFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailImageAnalysFragment"
+        android:name="com.dicoding.budayai.analys.DetailImageAnalysFragment"
+        android:label="fragment_detail_image_analys"
+        tools:layout="@layout/fragment_detail_image_analys">
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 
 </navigation>
