@@ -3,7 +3,8 @@
 # Contoh
 <p align="center">
 
-**OnBoarding dan Login Pop Up Page**
+<img src="https://drive.google.com/drive/u/3/folders/1s8H4RgHYJV7mLyW1TBWaPy0wrmWeHIp9" style="width: 480px;height: 1740px;border-radius: 10px" />
+<!-- **OnBoarding dan Login Pop Up Page**
 <img src="BudayAI/app/main/res/drawable/documentation/0_boarding.jpg" style="width: 480px;height: 1740px;border-radius: 10px" />
 <img src="BudayAI/app/main/res/drawable/documentation/1_login.jpg" style="width: 480px;height: 1740px;border-radius: 10px" />
 
@@ -24,6 +25,6 @@
 <img src="BudayAI/app/main/res/drawable/documentation/9_AnalysOrnamenPage.jpg" style="width: 480px;height: 1740px;border-radius: 10px" />
 <img src="BudayAI/app/main/res/drawable/documentation/10_InsertImagenModel.jpg" style="width: 480px;height: 1740px;border-radius: 10px" />
 <img src="BudayAI/app/main/res/drawable/documentation/11_ResultAnalysOrnamen.jpg" style="width: 480px;height: 1740px;border-radius: 10px" />
-<img src="BudayAI/app/main/res/drawable/documentation/12_DetailImageResult.jpg" style="width: 480px;height: 1740px;border-radius: 10px" />
+<img src="BudayAI/app/main/res/drawable/documentation/12_DetailImageResult.jpg" style="width: 480px;height: 1740px;border-radius: 10px" /> -->
 
 <p>
