@@ -37,7 +37,7 @@
                 android:id="@+id/btn_took_galery"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="From Gallery"
+                android:text="@string/from_gallery"
                 android:layout_weight="1"
                 android:textColor="@color/white"
                 android:layout_margin="16dp" />
@@ -46,7 +46,7 @@
                 android:id="@+id/btn_took_camera"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="From Camera"
+                android:text="@string/from_camera"
                 android:layout_weight="1"
                 android:textColor="@color/white"
                 android:layout_margin="16dp" />
@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_image"
             app:layout_constraintStart_toStartOf="parent"
             android:ems="20"
-            android:hint="Select model (input model_1 / model_2)"/>
+            android:hint="@string/select_model_input_model_1_model_2"/>
 
         <Button
             android:id="@+id/btn_upload"
@@ -76,7 +76,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_select_model"
             android:enabled="false"
-            android:text="Predict"/>
+            android:text="@string/predict"/>
 
         <TextView
             android:id="@+id/tv_result"
