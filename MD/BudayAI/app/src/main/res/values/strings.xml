@@ -42,4 +42,20 @@
     <string name="error">Error</string>
     <string name="choose_image">Choose Image</string>
     <string name="required">Required</string>
+    <string name="ornamen_name">Ornamen Name</string>
+    <string name="score_detection">Detection Score</string>
+    <string name="result">Result:</string>
+    <string name="detect_failed">Detection Failed</string>
+    <string name="detect_success">Detection Success</string>
+    <string name="select_model">Select Model</string>
+    <string name="select_model_input_model_1_model_2">Select model (input model_1 / model_2)</string>
+    <string name="from_camera">From Camera</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="predict">Predict</string>
+    <string name="dalam_tahap_pengembangan">Dalam Tahap Pengembangan</string>
+    <string name="halaman_profile_dalam_tahap_pengembangan">HALAMAN PROFILE (Dalam Tahap Pengembangan)</string>
+    <string-array name="models">
+        <item>Model 1</item>
+        <item>Model 2</item>
+    </string-array>
 </resources>

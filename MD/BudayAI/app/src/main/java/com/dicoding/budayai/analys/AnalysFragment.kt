@@ -1,7 +1,6 @@
 package com.dicoding.budayai.analys
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -13,15 +12,14 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.activityViewModels
+import com.bumptech.glide.Glide
 import com.dicoding.budayai.R
 import com.dicoding.budayai.databinding.FragmentAnalysBinding
 import com.dicoding.budayai.util.reduceFileImage
 import com.dicoding.budayai.util.rotateBitmap
 import com.dicoding.budayai.util.uriToFile
 import com.dicoding.budayai.viewModel.DetectModel
-import com.dicoding.budayai.viewModel.FactoryModel
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -64,6 +62,18 @@ class AnalysFragment : Fragment() {
                 addDetect(select_model)
             } else {
                 Toast.makeText(activity, R.string.required, Toast.LENGTH_SHORT).show()
+            }
+
+            analysModel.analys.observe(requireActivity()){
+                if (it.error == false){
+                    Glide.with(this).load(it.imageUrl).into(binding.avatar)
+                    binding.tvNameCategories.text = it.listCategories[0]
+                    binding.tvScores.text = it.detectionScores[0].toString()
+                    Toast.makeText(activity, R.string.detect_success, Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(activity, R.string.detect_failed, Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(context, AnalysFragment::class.java))
+                }
             }
         }
 
