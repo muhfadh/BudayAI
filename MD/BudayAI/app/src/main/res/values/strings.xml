@@ -36,4 +36,10 @@
     <string name="have_account">Already have an account?</string>
     <string name="sign_in">Sign In</string>
     <string name="don_t_have_any_account">Don’t have any account?</string>
+    <string name="location_view">Location View</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="error_took_image">Error Take Image</string>
+    <string name="error">Error</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="required">Required</string>
 </resources>

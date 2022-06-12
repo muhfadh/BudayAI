@@ -21,10 +21,11 @@ class DetailLocationFragment : BottomSheetDialogFragment() {
         binding.detailMap.tvNameOrnamen.text = bundle.type
         binding.detailMap.tvDescription.text = bundle.detail
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentDetailLocationBinding.inflate(inflater, container, false)
         return binding.root
     }

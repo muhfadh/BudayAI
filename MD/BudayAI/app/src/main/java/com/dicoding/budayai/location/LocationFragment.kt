@@ -61,10 +61,16 @@ class LocationFragment : Fragment() {
 
         fetch()
 
-        val action = LocationFragmentDirections.actionLocationFragmentToStyleMapFragment2()
-        binding.optionStyleMap.setOnClickListener{
-            view.findNavController().navigate(R.id.action_locationFragment_to_styleMapFragment2)
+        binding.toolbarMaps.inflateMenu(R.menu.map_option)
+        binding.toolbarMaps.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.map_style_option -> {
+                    view.findNavController().navigate(R.id.action_locationFragment2_to_styleMapFragment)
+                }
+            }
+            true
         }
+
     }
 
     override fun onDestroy() {
@@ -117,7 +123,7 @@ class LocationFragment : Fragment() {
             }
             dataModel?.let {
                 val latLog = LatLng(it.lat, it.lon)
-                val toDetail = LocationFragmentDirections.actionLocationFragmentToDetailLocationFragment(
+                val toDetail = LocationFragmentDirections.actionLocationFragment2ToDetailLocationFragment(
                     it.type,
                     it.detail,
                     it.photoUrl

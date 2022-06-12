@@ -5,12 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.dicoding.budayai.R
 import com.dicoding.budayai.api.adapter.DeskripsiAdapter
-import com.dicoding.budayai.api.adapter.SejarahAdapter
 import com.dicoding.budayai.api.response.ResponseClassItem
 import com.dicoding.budayai.databinding.FragmentDeskripsiBinding
-import com.dicoding.budayai.databinding.FragmentSejarahBinding
 
 class DeskripsiFragment : Fragment() {
 
@@ -21,7 +18,7 @@ class DeskripsiFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentDeskripsiBinding.inflate(inflater, container, false)
         return binding.root
     }

@@ -1,7 +1,6 @@
 package com.dicoding.budayai.api.adapter
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -10,7 +9,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.dicoding.budayai.api.response.ResponseHomeItem
 import com.dicoding.budayai.databinding.ItemObjekBinding
-import com.dicoding.budayai.detail.DetailOrnamenActivity
 import com.dicoding.budayai.util.CallbackHome
 
 lateinit var mContextt: Context

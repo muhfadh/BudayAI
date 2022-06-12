@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".auth.LoginFragment"
+    tools:context=".auth.LoginActivity"
+    android:id="@+id/loginFragment"
     android:background="@color/green">
 
     <TextView
         android:id="@+id/txt_buday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="107dp"
-        android:text="@string/budayai"
+        android:layout_marginTop="136dp"
         android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/budayai"
+        android:textColor="@color/white"
         android:textSize="40sp"
-        android:textColor="@color/white" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
