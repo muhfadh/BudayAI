@@ -13,14 +13,11 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import androidx.navigation.findNavController
-import androidx.navigation.ui.setupWithNavController
 import com.dicoding.budayai.MainActivity
 import com.dicoding.budayai.R
 import com.dicoding.budayai.analys.AnalysFragment.Companion.CAMERA
 import com.dicoding.budayai.databinding.ActivityCameraBinding
 import com.dicoding.budayai.util.createFile
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -62,11 +59,6 @@ class CameraActivity : AppCompatActivity() {
                 }
             }, ContextCompat.getMainExecutor(this))
         }
-
-        val navView = findViewById<BottomNavigationView>(R.id.bottom_navView)
-
-        val navController = findNavController(R.id.fragment_view)
-        navView.setupWithNavController(navController)
     }
 
     override fun onResume() {

@@ -14,10 +14,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.commit
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.dicoding.budayai.analys.AnalysFragment
 import com.dicoding.budayai.databinding.ActivityMainBinding
 import com.dicoding.budayai.location.LocationActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -49,12 +47,6 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.fragment_view)
         navView.setupWithNavController(navController)
-
-        binding.fabBottomBar.setOnClickListener {
-            supportFragmentManager.commit {
-                replace(R.id.activity_main, AnalysFragment(), AnalysFragment::class.java.simpleName)
-            }
-        }
     }
 
     override fun onOptionsItemSelected(menu: MenuItem): Boolean {

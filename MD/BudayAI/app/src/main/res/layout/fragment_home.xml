@@ -80,19 +80,6 @@
                 android:layout_marginStart="20dp"
                 android:textColor="@color/black"/>
 
-<!--            <androidx.appcompat.widget.SearchView-->
-<!--                android:id="@+id/search_list"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="36dp"-->
-<!--                android:layout_marginStart="24dp"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginEnd="24dp"-->
-<!--                android:background="#5BFFFFFF"-->
-<!--                app:iconifiedByDefault="false"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="@id/img_objek"-->
-<!--                app:queryHint="Cari Ornamen!!" />-->
-
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_ornamen"
                 android:layout_width="match_parent"

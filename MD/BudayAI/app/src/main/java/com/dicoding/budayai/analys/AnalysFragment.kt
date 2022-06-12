@@ -1,7 +1,6 @@
 package com.dicoding.budayai.analys
 
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -13,15 +12,15 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.activityViewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.budayai.R
+import com.dicoding.budayai.api.adapter.AnalysAdapter
 import com.dicoding.budayai.databinding.FragmentAnalysBinding
 import com.dicoding.budayai.util.reduceFileImage
 import com.dicoding.budayai.util.rotateBitmap
 import com.dicoding.budayai.util.uriToFile
 import com.dicoding.budayai.viewModel.DetectModel
-import com.dicoding.budayai.viewModel.FactoryModel
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -32,6 +31,7 @@ import java.io.File
 class AnalysFragment : Fragment() {
 
     private lateinit var binding: FragmentAnalysBinding
+    private lateinit var analysAdapter: AnalysAdapter
     private lateinit var result: Bitmap
     private var getImage: File? = null
     private lateinit var detectModel: DetectModel
@@ -57,7 +57,9 @@ class AnalysFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        analysAdapter = AnalysAdapter()
         detectModel = DetectModel.getInstance(requireActivity())
+
         binding.btnUpload.setOnClickListener {
             val select_model = binding.tvSelectModel.text.toString()
             if (select_model.isNotEmpty()){
@@ -65,6 +67,20 @@ class AnalysFragment : Fragment() {
             } else {
                 Toast.makeText(activity, R.string.required, Toast.LENGTH_SHORT).show()
             }
+
+            binding.rvResult.layoutManager = LinearLayoutManager(activity)
+
+            analysModel.analys.observe(viewLifecycleOwner){
+                if (it.error == false){
+                    analysAdapter.setAnalys(listOf(it))
+                    Toast.makeText(activity, R.string.detect_success, Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(activity, R.string.detect_failed, Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(context, AnalysFragment::class.java))
+                }
+            }
+
+            binding.rvResult.adapter = analysAdapter
         }
 
         binding.btnTookGalery.setOnClickListener {
