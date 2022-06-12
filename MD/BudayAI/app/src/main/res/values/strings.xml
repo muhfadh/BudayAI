@@ -43,8 +43,11 @@
     <string name="choose_image">Choose Image</string>
     <string name="required">Required</string>
     <string name="ornamen_name">Ornamen Name</string>
-    <string name="score_detection">Score Detection</string>
+    <string name="score_detection">Detection Score</string>
     <string name="result">Result:</string>
+    <string name="detect_failed">Detection Failed</string>
+    <string name="detect_success">Detection Success</string>
+    <string name="select_model">Select Model</string>
     <string-array name="models">
         <item>Model 1</item>
         <item>Model 2</item>

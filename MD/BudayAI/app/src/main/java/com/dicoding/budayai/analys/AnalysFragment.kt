@@ -1,6 +1,5 @@
 package com.dicoding.budayai.analys
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -15,7 +14,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.activityViewModels
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.dicoding.budayai.R
 import com.dicoding.budayai.databinding.FragmentAnalysBinding
 import com.dicoding.budayai.util.reduceFileImage
@@ -67,9 +65,15 @@ class AnalysFragment : Fragment() {
             }
 
             analysModel.analys.observe(requireActivity()){
-                Glide.with(this).load(it.imageUrl).into(binding.avatar)
-                binding.tvNameCategories.text = it.listCategories[0]
-                binding.tvScores.text = it.detectionScores[0].toString()
+                if (it.error == false){
+                    Glide.with(this).load(it.imageUrl).into(binding.avatar)
+                    binding.tvNameCategories.text = it.listCategories[0]
+                    binding.tvScores.text = it.detectionScores[0].toString()
+                    Toast.makeText(activity, R.string.detect_success, Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(activity, R.string.detect_failed, Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(context, AnalysFragment::class.java))
+                }
             }
         }
 

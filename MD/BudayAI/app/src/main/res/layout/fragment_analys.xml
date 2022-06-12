@@ -62,8 +62,7 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_image"
             app:layout_constraintStart_toStartOf="parent"
             android:ems="20"
-            tools:text="Select Model"
-            android:hint="Select Model"/>
+            android:hint="Select model (input model_1 / model_2)"/>
 
         <Button
             android:id="@+id/btn_upload"
@@ -81,9 +80,11 @@
 
         <TextView
             android:id="@+id/tv_result"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_semi_bold"
@@ -94,9 +95,11 @@
             android:text="@string/result"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_result">
@@ -105,7 +108,7 @@
                 android:id="@+id/avatar"
                 android:layout_width="92dp"
                 android:layout_height="92dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="8dp"
                 android:src="@drawable/placeholder_image"
@@ -128,7 +131,6 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.122"
                 app:layout_constraintStart_toEndOf="@+id/avatar"
                 app:layout_constraintTop_toTopOf="@+id/avatar" />
 
@@ -139,7 +141,7 @@
                 android:layout_marginTop="8dp"
                 android:ellipsize="end"
                 android:fontFamily="@font/poppins_regular"
-                android:maxLines="3"
+                android:maxLines="1"
                 android:text="@string/score_detection"
                 android:textColor="@color/green"
                 android:textSize="10sp"
@@ -147,8 +149,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/tv_name_categories"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/tv_name_categories"
-                app:layout_constraintTop_toBottomOf="@+id/tv_name_categories"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_categories" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
