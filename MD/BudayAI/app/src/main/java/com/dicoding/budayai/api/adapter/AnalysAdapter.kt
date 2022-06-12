@@ -52,7 +52,7 @@ class AnalysAdapter : RecyclerView.Adapter<AnalysAdapter.RecyclerViewHolder>(){
             .into(holder.image)
         with(holder){
             name_categories.text = list.listCategories[0]
-            scores.text = list.detectionScores[0].toString()
+            scores.text = "Detect Score: " +list.detectionScores[0].toString()
 
             image.setOnClickListener {
                 val toDetailImageFragment = AnalysFragmentDirections.actionNavigationAnalysToDetailImageAnalysFragment(list?.imageUrl)
