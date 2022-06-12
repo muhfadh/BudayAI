@@ -1,0 +1,120 @@
+item { 
+	name:'angklung'
+	id:1
+}
+item { 
+	name:'beskap_jawa'
+	id:2
+}
+item { 
+	name:'blangkon'
+	id:3
+}
+item { 
+	name:'bolon'
+	id:4
+}
+item { 
+	name:'bonang'
+	id:5
+}
+item { 
+	name:'bulang'
+	id:6
+}
+item { 
+	name:'gondang'
+	id:7
+}
+item { 
+	name:'hudoq'
+	id:8
+}
+item { 
+	name:'joglo'
+	id:9
+}
+item { 
+	name:'kecapi_sunda'
+	id:10
+}
+item { 
+	name:'kerambit'
+	id:11
+}
+item { 
+	name:'keris_jawa'
+	id:12
+}
+item { 
+	name:'kujang'
+	id:13
+}
+item { 
+	name:'kuluk'
+	id:14
+}
+item { 
+	name:'mandau'
+	id:15
+}
+item { 
+	name:'piso_halasan'
+	id:16
+}
+item { 
+	name:'rompi_dayak'
+	id:17
+}
+item { 
+	name:'rumah_gadang'
+	id:18
+}
+item { 
+	name:'sampek'
+	id:19
+}
+item { 
+	name:'saron'
+	id:20
+}
+item { 
+	name:'siger_sunda'
+	id:21
+}
+item { 
+	name:'sortali'
+	id:22
+}
+item { 
+	name:'suling'
+	id:23
+}
+item { 
+	name:'surjan'
+	id:24
+}
+item { 
+	name:'tali_tali'
+	id:25
+}
+item { 
+	name:'tanjak_minang'
+	id:26
+}
+item { 
+	name:'telingaan_aruu'
+	id:27
+}
+item { 
+	name:'tingkuluak'
+	id:28
+}
+item { 
+	name:'wayang_golek'
+	id:29
+}
+item { 
+	name:'wayang_kulit'
+	id:30
+}
