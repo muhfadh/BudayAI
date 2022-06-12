@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -19,6 +20,7 @@ import com.dicoding.budayai.databinding.FragmentAnalysBinding
 import com.dicoding.budayai.util.reduceFileImage
 import com.dicoding.budayai.util.rotateBitmap
 import com.dicoding.budayai.util.uriToFile
+import com.dicoding.budayai.viewModel.DetectModel
 import com.dicoding.budayai.viewModel.FactoryModel
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -32,8 +34,8 @@ class AnalysFragment : Fragment() {
     private lateinit var binding: FragmentAnalysBinding
     private lateinit var result: Bitmap
     private var getImage: File? = null
-    private lateinit var factoryModel: FactoryModel
-    private val analysModel: AnalysModel by activityViewModels { factoryModel }
+    private lateinit var detectModel: DetectModel
+    private val analysModel: AnalysModel by activityViewModels { detectModel }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,11 +45,26 @@ class AnalysFragment : Fragment() {
         return binding.root
     }
 
+    private fun addDetect(select_model: String){
+        if (getImage != null){
+            val reqDescription = select_model.toRequestBody("text/plain".toMediaType())
+            val file = reduceFileImage(getImage as File)
+            val reqImage = file.asRequestBody("image/*".toMediaTypeOrNull())
+            val imageMultipart: MultipartBody.Part = MultipartBody.Part.createFormData("file", file.name, reqImage)
+            analysModel.addDetect(imageMultipart, reqDescription)
+        }
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        factoryModel = FactoryModel.getInstance(requireActivity())
+        detectModel = DetectModel.getInstance(requireActivity())
         binding.btnUpload.setOnClickListener {
-            //add action
+            val select_model = binding.tvSelectModel.text.toString()
+            if (select_model.isNotEmpty()){
+                addDetect(select_model)
+            } else {
+                Toast.makeText(activity, R.string.required, Toast.LENGTH_SHORT).show()
+            }
         }
 
         binding.btnTookGalery.setOnClickListener {

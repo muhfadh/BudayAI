@@ -27,14 +27,14 @@
 
                 <TextView
                     android:id="@+id/tv_app_bar"
-                    android:text="@string/title_detail_suku"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textColor="@color/brown_light"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/title_detail_suku"
+                    android:textColor="@color/green"
+                    android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:textSize="18sp"/>
+                    app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.appcompat.widget.Toolbar

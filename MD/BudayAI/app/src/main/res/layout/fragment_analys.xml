@@ -52,17 +52,30 @@
                 android:layout_margin="16dp" />
         </LinearLayout>
 
+        <EditText
+            android:id="@+id/tv_select_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_image"
+            app:layout_constraintStart_toStartOf="parent"
+            android:ems="20"
+            tools:text="Select Model"
+            android:hint="Select Model"/>
+
         <Button
-        android:id="@+id/btn_upload"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_image"
-        android:enabled="false"
-        android:text="Predict"/>
+            android:id="@+id/btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_select_model"
+            android:enabled="false"
+            android:text="Predict"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
