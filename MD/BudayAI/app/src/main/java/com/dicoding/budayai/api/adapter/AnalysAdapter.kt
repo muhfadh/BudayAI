@@ -55,7 +55,7 @@ class AnalysAdapter : RecyclerView.Adapter<AnalysAdapter.RecyclerViewHolder>(){
             scores.text = "Detect Score: " +list.detectionScores[0].toString()
 
             image.setOnClickListener {
-                val toDetailImageFragment = AnalysFragmentDirections.actionNavigationAnalysToDetailImageAnalysFragment(list?.imageUrl)
+                val toDetailImageFragment = AnalysFragmentDirections.actionNavigationAnalysToDetailImageAnalysFragment(list.imageUrl)
                 val extras = FragmentNavigatorExtras(image to "detail_image")
                 root.findNavController().navigate(toDetailImageFragment, extras)
             }
