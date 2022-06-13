@@ -41,7 +41,7 @@
    * APK File: 
     https://drive.google.com/file/d/1qKLrQP7eWxCVyNHAbeco6tStx_uxichz/view
    * Figma Design File: 
-    https://www.figma.com/file/G0z5wz2LUkFri7D2qho8XQ/BudayAI?node-id=2%3A2
+    https://www.figma.com/file/G0z5wz2LUkFri7D2qho8XQ/BudayAI?node-id=0%3A1
 
 ## Tech Stack
    * Recycler View: 
