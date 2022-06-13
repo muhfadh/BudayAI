@@ -32,3 +32,33 @@
     <img src="https://user-images.githubusercontent.com/79825517/173267934-f054ff70-cd8b-4b96-909c-a84be0323c74.jpg" style="width: 175px;height: auto;border-radius:5px" />
     <img src="https://user-images.githubusercontent.com/79825517/173267946-df8ee760-db03-40c4-9a91-714f0e4b5168.jpg" style="width: 175px;height: auto;border-radius:5px" />-->
 <p>
+    
+## Features
+   * Detect Location: Detect location for ornamen with data latitude and langitude from CC API
+   * Image Clasification: Use machine learning technology for identification and clasify ornament by image object
+
+## Links
+   * APK File: 
+    https://drive.google.com/file/d/1qKLrQP7eWxCVyNHAbeco6tStx_uxichz/view
+   * Figma Design File: 
+    https://www.figma.com/file/G0z5wz2LUkFri7D2qho8XQ/BudayAI?node-id=2%3A2
+
+## Tech Stack
+   * Recycler View: 
+    https://developer.android.com/jetpack/androidx/releases/recyclerview?hl=id
+   * Navigation: 
+    https://developer.android.com/jetpack/androidx/releases/navigation?hl=id
+   * View Pager:
+    https://developer.android.com/jetpack/androidx/releases/viewpager2?hl=id
+   * Glide:
+    https://github.com/bumptech/glide/releases
+   * CameraX:
+    https://developer.android.com/jetpack/androidx/releases/camera
+   * Google Play Service:
+    https://developers.google.com/android/guides/releases
+   * Data Store:
+    https://developer.android.com/jetpack/androidx/releases/datastore
+   * Retrofit2:
+    https://square.github.io/retrofit/
+   * OkHttp:
+    https://square.github.io/okhttp/
