@@ -9,7 +9,7 @@
 - 6 = custom_ssd_mobilenet_v2_fpnlite_320x320_V3                | BATCH_SIZE = 12
 - 7 = custom_ssd_mobilenet_v2_fpnlite_640x640_1                 | BATCH_SIZE = 4
 - 8* = custom_centernet_resnet101_v1_fpn_512x512                | BATCH_SIZE = 2
-
+- 9* = faster_rcnn_resnet50_v1_640x640                          | BATCH_SIZE  = 2
 
 **Average Precision**
 
@@ -23,7 +23,7 @@
 | 6 | 0.453 | 0.677 | 0.498 | -1 | 0.209 | 0.459 | 15000 | 21 |
 | 7 | 0.320 | 0.551 | 0.346 | -1 | 0.223 | 0.322 | 15000 | 21 |
 | 8 | 0.355 | 0.524 | 0.385 | -1 | 0.148 | 0.358 | 4200 (initial steps 15000) | 21 |
-
+| 9 | 0.282 | 0.494 | 0.278 | 0.000 | 0.008 | 0.298 | 15000 | 30
 
 **Average Recall**
 
@@ -37,6 +37,7 @@
 | 6 | 0.450 | 0.562 | 0.575 | -1| 0.300 | 0.578 | 15000 | 21 |
 | 7 | 0.375 | 0.514 | 0.536 | -1| 0.313 | 0.536 | 15000 | 21 |
 | 8 | 0.459 | 0.625 | 0.634 | -1| 0.295 | 0.640 | 4200 (initial steps 15000) | 21 |
+| 9 | 0.342 | 0.457 | 0.463 | 0.000 | 0.030 | 0.485 | 15000 | 30
 
 
 **loss**
@@ -51,3 +52,4 @@
 | 6 | 0.290 | 0.602 | 0.110 | 1.001 | 15000 | 21 |
 | 7 | 0.341 | 0.557 | 0.141 | 1.039 | 15000 | 21 |
 | 8* | loss_box_offset = 0.506 | loss_box_scale = 1.168 | loss_object_center = 2.327 | 4.000 | 4200 (initial steps 15000) | 21 |
+| 9* | Loss/BoxClassifierLoss/localization_loss = 0.113, Loss/RPNLoss/localization_loss = 0.334 | Loss/BoxClassifierLoss/classification_loss = 0.189 |  Loss/regularization_loss = 0, Loss/RPNLoss/objectness_loss = 0.230| Loss/total_loss = 0 | 15000 | 30 |
