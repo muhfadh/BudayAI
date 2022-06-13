@@ -1,4 +1,5 @@
 # BudayAI 
+<img src="https://user-images.githubusercontent.com/43193982/173267843-4ee94905-dd63-4b85-b860-9acc3788df8d.png" width="100" height="100">
 ![logo hitam](https://user-images.githubusercontent.com/43193982/173267843-4ee94905-dd63-4b85-b860-9acc3788df8d.png)
 BudayAI is a tourism cultural app that can provide a piece of information about Indonesia's cultural ornament. Our app use object detection model for the detection of Indonesian Cultural Ornament from an objection to the form of an Image and will show information about the detected object like name, origin, history, etc, and can show location for each ornament object using Google Maps API.
 <br/>
