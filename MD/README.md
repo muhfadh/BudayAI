@@ -40,6 +40,8 @@
 ## Links
    * APK File: 
     https://drive.google.com/file/d/1qKLrQP7eWxCVyNHAbeco6tStx_uxichz/view
+   * Demo Video:
+    https://drive.google.com/file/d/1srDBI3lUyK8Oy8_8R2O6VZ0Lud0mZ0FY/view?usp=sharing
    * Figma Design File: 
     https://www.figma.com/file/G0z5wz2LUkFri7D2qho8XQ/BudayAI?node-id=0%3A1
 
