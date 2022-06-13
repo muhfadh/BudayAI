@@ -9,8 +9,7 @@
 - 6 = custom_ssd_mobilenet_v2_fpnlite_320x320_V3                | BATCH_SIZE = 12
 - 7 = custom_ssd_mobilenet_v2_fpnlite_640x640_1                 | BATCH_SIZE = 4
 - 8* = custom_centernet_resnet101_v1_fpn_512x512                | BATCH_SIZE = 2
-- 9 = faster_rcnn_resnet50_v1_640x640                           | BATCH_SIZE  = 2
-
+- 9* = faster_rcnn_resnet50_v1_640x640                          | BATCH_SIZE  = 2
 
 **Average Precision**
 
@@ -53,3 +52,4 @@
 | 6 | 0.290 | 0.602 | 0.110 | 1.001 | 15000 | 21 |
 | 7 | 0.341 | 0.557 | 0.141 | 1.039 | 15000 | 21 |
 | 8* | loss_box_offset = 0.506 | loss_box_scale = 1.168 | loss_object_center = 2.327 | 4.000 | 4200 (initial steps 15000) | 21 |
+| 9* | Loss/BoxClassifierLoss/localization_loss = 0.113, Loss/RPNLoss/localization_loss = 0.334 | Loss/BoxClassifierLoss/classification_loss = 0.189 |  Loss/regularization_loss = 0, Loss/RPNLoss/objectness_loss = 0.230| Loss/total_loss = 0 | 15000 | 30 |

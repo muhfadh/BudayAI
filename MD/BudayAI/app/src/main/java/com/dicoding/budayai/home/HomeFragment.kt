@@ -49,7 +49,9 @@ class HomeFragment : Fragment() {
             listHomeAdapter.setDataHome(it as ArrayList<ResponseHomeItem>)
         }
 
+        binding.progressBar.visibility = View.VISIBLE
         homeModel.data.observe(viewLifecycleOwner){
+            binding.progressBar.visibility = View.INVISIBLE
             listAdapter.setData(it as ArrayList<ResponseClassItem>)
         }
 
