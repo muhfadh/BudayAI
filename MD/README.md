@@ -44,6 +44,8 @@
     https://www.figma.com/file/G0z5wz2LUkFri7D2qho8XQ/BudayAI?node-id=0%3A1
 
 ## Tech Stack
+   * Figma:
+    https://www.figma.com/
    * Recycler View: 
     https://developer.android.com/jetpack/androidx/releases/recyclerview?hl=id
    * Navigation: 
