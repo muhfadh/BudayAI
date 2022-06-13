@@ -61,6 +61,7 @@ class AnalysFragment : Fragment() {
         detectModel = DetectModel.getInstance(requireActivity())
 
         binding.btnUpload.setOnClickListener {
+            binding.progressBar2.visibility = View.VISIBLE
             val select_model = binding.tvSelectModel.text.toString()
             if (select_model.isNotEmpty()){
                 addDetect(select_model)
@@ -72,9 +73,11 @@ class AnalysFragment : Fragment() {
 
             analysModel.analys.observe(viewLifecycleOwner){
                 if (it.error == false){
+                    binding.progressBar2.visibility = View.INVISIBLE
                     analysAdapter.setAnalys(listOf(it))
                     Toast.makeText(activity, R.string.detect_success, Toast.LENGTH_SHORT).show()
                 } else {
+                    binding.progressBar2.visibility = View.INVISIBLE
                     Toast.makeText(activity, R.string.detect_failed, Toast.LENGTH_SHORT).show()
                     startActivity(Intent(context, AnalysFragment::class.java))
                 }
